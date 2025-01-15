@@ -28,3 +28,7 @@ body {
 .link {
   color: #fff;
 }
+
+.iframe {
+  border-top-left-radius: 18px;
+}
