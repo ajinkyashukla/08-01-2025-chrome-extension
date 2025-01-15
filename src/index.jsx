@@ -26,6 +26,12 @@ export function App() {
 						url.value = encodeURIComponent(tab.url);
 					}
 				});
+
+				chrome.runtime.onMessage.addListener(message => {
+					if (message === 'closeSidePanel') {
+					  window.close();
+					}
+				  })
 			} catch (e) {
 				console.error(e)
 			}
@@ -35,7 +41,7 @@ export function App() {
 
 	return (
 		<LocationProvider>
-			<iframe src={`https://two6-12-2024-web.onrender.com/?url=${url}`} width='100%' height='100%'></iframe>
+			<iframe src={`https://two6-12-2024-web.onrender.com/?url=${url}`} width='100%' height='100%' className='iframe'></iframe>
 		</LocationProvider>
 	);
 }

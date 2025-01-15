@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Comments Panel",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Post and view comments on any web page using Disqus or Facebook",
     "action": {
       "default_title": "Comments Panel"
@@ -15,6 +15,14 @@
     "permissions": [
       "sidePanel",
       "tabs"
-    ]
+    ],
+    "commands": {
+      "open_side_panel": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+S"
+        },
+        "description": "Open the side panel"
+      }
+    }
   }
   
