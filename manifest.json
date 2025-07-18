@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "name": "Comments Panel",
-    "version": "1.1.0",
-    "description": "Post and view comments on any web page using Disqus or Facebook",
+    "name": "Disqus Panel",
+    "version": "1.2.0",
+    "description": "Post and view comments on any web page using Disqus",
     "action": {
-      "default_title": "Comments Panel"
+      "default_title": "Disqus Panel"
     },
     "background": {
       "service_worker": "background.js"
